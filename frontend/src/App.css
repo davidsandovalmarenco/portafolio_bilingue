@@ -1,0 +1,60 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #eef3f9;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea { font: inherit; }
+.container {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+}
+header { margin-bottom: 24px; }
+.eyebrow {
+  color: #2563eb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.project-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border-radius: 14px;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+textarea { min-height: 90px; }
+button {
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: #2563eb;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.card {
+  padding: 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+.card span { color: #2563eb; font-weight: 700; }
+.card a { display: inline-block; margin: 8px 0; }
+.danger { background: #dc2626; margin-left: 10px; }
+.error { color: #b91c1c; font-weight: 700; }
+@media (max-width: 700px) {
+  .project-form { grid-template-columns: 1fr; }
+}
